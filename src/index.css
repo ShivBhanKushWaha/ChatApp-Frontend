@@ -1,0 +1,45 @@
+/* @import "tailwindcss"; */
+@import "tailwindcss";
+
+:root {
+    --background-light: #ffffff;
+    --background-dark: #111827;
+    --text-light: #111827;
+    --text-dark: #ffffff;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+html {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    
+}
+ 
+ .input-title::placeholder{
+    color: var(--text-light);
+     
+}
+
+html.dark {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+ 
+html.dark .input-title::placeholder{
+    color: var(--text-dark);
+
+}
+
+
+html, body {
+    overflow: hidden;
+  }
+
+  body {
+    -ms-overflow-style: none;
+  }
